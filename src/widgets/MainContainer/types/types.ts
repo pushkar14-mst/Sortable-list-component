@@ -3,4 +3,9 @@ interface ISkillInputProps {
   index: number;
 }
 
-export type { ISkillInputProps };
+interface ISkillOptionProps {
+  id: number;
+  onSelectSkill: (skill: string) => void;
+}
+
+export type { ISkillInputProps, ISkillOptionProps };
